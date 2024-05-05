@@ -1,0 +1,9 @@
+.mainContent {
+  background-color: #181818;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}

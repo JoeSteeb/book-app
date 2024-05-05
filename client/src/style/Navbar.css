@@ -1,0 +1,34 @@
+/* Navbar.css */
+.unClickedButton,
+.clickedButton {
+  /* Ensure higher specificity */
+  color: #fff; /* Change text color to white for better visibility */
+  font-size: x-small;
+}
+
+.unClickedButton {
+  transition: none;
+  background-color: #1db954 !important; /* Override Bootstrap styles */
+  margin: 0 !important;
+}
+
+.clickedButton {
+  transition: none;
+  background-color: #181818 !important; /* Override Bootstrap styles */
+  margin: 0 !important;
+  border-top-left-radius: 10% !important;
+  border-top-right-radius: 10% !important;
+}
+
+.nav {
+  background-color: #1db954 !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background.css or another global CSS file */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
