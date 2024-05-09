@@ -1,4 +1,21 @@
-.loginField {
-  width: 50%;
-  background-color: red !important;
+.main-pad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.content-wrapper{
+  background-color: #808080;
+  display: inline-block;
+  border-radius: 2%;
+  padding: 1%;
+  border: none;
+}
+
+.flex-wrapper{
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  padding-top: 3%;
 }

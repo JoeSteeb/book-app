@@ -7,12 +7,7 @@ import "./style/Navbar.css";
 import "./style/Background.css";
 
 function App() {
-  const [navButtons, setNavButtons] = useState([
-    { name: "Home", content: <Home />, style: "clickedButton" },
-    { name: "Profile", content: <Profile />, style: "unClickedButton" },
-    { name: "Discover", content: <Discover />, style: "unClickedButton" },
-    { name: "Login", content: <Login />, style: "unClickedButton" },
-  ]);
+  const [mainContent, setMainContent] = useState(<Home />);
 
   const navButtonClick = (name) => {
     setNavButtons(
@@ -27,7 +22,16 @@ function App() {
     );
   };
 
-  const [mainContent, setMainContent] = useState(<Home />);
+  const [navButtons, setNavButtons] = useState([
+    { name: "Home", content: <Home />, style: "clickedButton" },
+    { name: "Profile", content: <Profile />, style: "unClickedButton" },
+    { name: "Discover", content: <Discover />, style: "unClickedButton" },
+    {
+      name: "Login",
+      content: <Login nav={navButtonClick} />,
+      style: "unClickedButton",
+    },
+  ]);
 
   return (
     <>
